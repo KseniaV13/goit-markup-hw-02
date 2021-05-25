@@ -6,6 +6,11 @@ ul {
 :root {
   --pretty-color: #2196f3;
   --while-color: #ffffff;
+  --black-color: #212121;
+  --grey-color: #757575;
+  --dark-gray-color: #2f303a;
+  --button-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 /*Шапка меню*/
@@ -15,185 +20,180 @@ ul {
 }
 .logo-header {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
   text-decoration: none;
+  color: var(--black-color);
 }
-.logo-header > span {
-  color: #2196f3;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 31px;
+.logo-header .web-header {
+  color: var(--pretty-color);
 }
+
+.header .studio-a:visited {
+  color: var(--pretty-color);
+}
+
+.header .logo-header:hover {
+  color: var(--black-color);
+}
+
+.header .portfolio-a:visited {
+  color: var(--pretty-color);
+}
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--black-color);
+}
+
 .list-header a {
   text-decoration: none;
 }
 .list-header a:hover {
-  color: #2196f3;
+  color: var(--pretty-color);
 }
 
 .nav-list a {
-  color: black;
+  color: var(--black-color);
 }
 
-.nav-list a.contacts {
-  color: #757575;
+a.contacts {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-color);
 }
 
 .nav-list a:hover {
-  color: #2196f3;
+  color: var(--pretty-color);
 }
 
 /*герой студия*/
-.title-features {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: #212121;
-}
-.title-description {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #757575;
+
+.hide {
+  opacity: 0;
 }
 
-.card {
+.title-features {
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--black-color);
+  text-transform: uppercase;
 }
-.card-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
+.title-description {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey-color);
+}
+
+.active .card-title {
   font-size: 18px;
   line-height: 36px;
-  color: #212121;
+  color: var(--black-color);
 }
 .card-description {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 30px;
-  color: #757575;
+  color: var(--grey);
 }
 
 /*4 пункта*/
 .title-main {
   text-transform: uppercase;
-  background: #2f303a;
+  background: var(--dark-gray-color);
 }
 .title-main-bold {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  color: #ffffff;
+  color: var(--while-color);
 }
 .button {
   cursor: pointer;
-  background: #2196f3;
+  background: var(--pretty-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   padding: 10px 32px;
 }
 
-/*Герой*/
-.picture {
-}
 .work {
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  color: #212121;
+  color: var(--black-color);
 }
 
 /*Команда*/
 
 .our-team {
-  background: #f5f4fa;
+  background: var(--while-color);
 }
 .title-team {
-  font-style: normal;
-  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
-  color: #212121;
+  color: var(--black-color);
 }
 .name {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  color: #212121;
+  color: var(--black-color);
 }
 
 .profession {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #757575;
+  color: var(--grey);
 }
 
 /*Кнопки*/
 .all-button {
-  background: #f5f4fa;
+  background: var(--button-color);
   border-radius: 4px;
   padding: 10px 32px;
   font-weight: 500;
-  color: #212121;
+  color: var(--black-color);
   border: none;
 }
 .all-button:hover {
-  color: white;
-  background-color: #2196f3;
+  color: var(--while-color);
+  background: var(--pretty-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*Футер*/
 .address {
-  font-style: normal;
-  background: #2f303a;
+  background: var(--dark-gray-color);
   border: none;
 }
-.adress-text {
+
+.address .logo:hover {
+  color: var(--while-color);
+}
+
+.address .contact-footer:hover {
+  color: #2196f3;
 }
 
 .logo {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--while-color);
 }
-.logo > span {
-  color: #2196f3;
+.logo .web {
+  color: var(--pretty-color);
 }
 
 .paragraph {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--while-color);
 }
 .contact-footer {
   font-style: normal;
-  color: #757575;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--footer-contacts-color);
   text-decoration: none;
-}
-.adress-text a:hover {
-  color: #2196f3;
 }
